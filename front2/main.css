@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+u {
+    size: 100px;
+}
+
+body {
+    font: 12pt sans-serif; 
+    color: #fff;
+    background-color:#3D3D3D;
+    padding-top: 100px; 
+}
+
+span {
+    color: tomato;
+}
+
+.content-container {
+    width: 1000px;
+    margin: auto;
+    margin-left: 200px;
+    border: 2px solid orange;
+    border-radius: 10px;
+    padding: 30px 15px 30px 15px;
+    text-align: justify;
+    -webkit-box-shadow: 18px 21px 20px 2px rgba(0, 0, 0, 0.84); 
+    -moz-box-shadow: 18px 21px 20px 2px rgba(0, 0, 0, 0.84); 
+    box-shadow: 18px 21px 20px 2px rgba(0, 0, 0, 0.84);
+    /* background-color: white; */  
+    font-family: 'Oswald', sans-serif;
+}
+
+.content-container > div {
+    font-size: 18pt;
+    color: grey;
+}
+
+
+.content-container > p {
+    font-size: 12pt;
+    color: white;
+    border: 0px solid;
+    border-radius: 10px;
+    background-color: rgb(80, 80, 80);
+    padding: 10px;
+}
+
+.content-container2 {
+    width: 250px;
+    margin: 200px;
+    margin-top: 90px;
+    border: 2px solid orange;
+    border-radius: 10px;
+    padding: 15px 15px 30px 15px;
+    text-align: justify;
+    -webkit-box-shadow: 18px 21px 20px 2px rgba(0, 0, 0, 0.84); 
+    -moz-box-shadow: 18px 21px 20px 2px rgba(0, 0, 0, 0.84); 
+    box-shadow: 18px 21px 20px 2px rgba(0, 0, 0, 0.84);
+    font-family: 'Oswald', sans-serif;
+}
+
+.content-container2 > h2 {
+    padding-left: 20px;
+    font: 24pt sans-serif;
+}
+
+.content-container2 > ol {
+    padding-top: 10px;
+    padding-left: 100px;
+    margin-top: 10px;
+    font: 14pt sans-serif;
+}
+
+.content-container3 {
+    width: 550px;
+    margin: 570px;
+    margin-top: -415;
+    border: 2px solid orange;
+    border-radius: 10px;
+    padding: 15px 15px 30px 15px;
+    text-align: justify;
+    -webkit-box-shadow: 18px 21px 20px 2px rgba(0, 0, 0, 0.84); 
+    -moz-box-shadow: 18px 21px 20px 2px rgba(0, 0, 0, 0.84); 
+    box-shadow: 18px 21px 20px 2px rgba(0, 0, 0, 0.84);
+    font-family: 'Oswald', sans-serif;
+}
+
+.content-container3 > h2 {
+    padding-left: 20px;
+    font: 24pt sans-serif;
+}
+
+.content-container3 > ul {
+    padding-top: 10px;
+    padding-left: 100px;
+    margin-top: 10px;
+    font: 14pt sans-serif;
+}
+
+.content-container4 {
+    width: 200px;
+    margin: 570px;
+    margin-top: -415;
+    border: 2px solid orange;
+    border-radius: 10px;
+    padding: 15px 15px 30px 15px;
+    text-align: justify;
+    -webkit-box-shadow: 18px 21px 20px 2px rgba(0, 0, 0, 0.84); 
+    -moz-box-shadow: 18px 21px 20px 2px rgba(0, 0, 0, 0.84); 
+    box-shadow: 18px 21px 20px 2px rgba(0, 0, 0, 0.84);
+    font-family: 'Oswald', sans-serif;
+}
+
+.content-container4 > h2 {
+    font: 24pt sans-serif;
+    color: rgb(240, 240, 240);
+    text-align: center;
+    margin-bottom: 15;
+}
+
+
+.content-container4 > p {
+    font-size: 12pt;
+    color: white;
+    border: 0px solid;
+    border-radius: 10px;
+    background-color: rgb(80, 80, 80);
+    padding: 10px;
+    margin-top: 20;
+    text-align: center;
+    margin-bottom: 5;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100;
+    height: 100;
+    border-radius: 100px; /* Радиус скругления */
+    border: 3px solid rgb(15, 15, 15); /* Параметры рамки */
+    box-shadow: 0 0 7px rgb(20, 20, 20); /* Параметры тени */
+}
+
+.content-container5 {
+    width: 213px;
+    height: 200px;
+    margin: 300px;
+    margin-top: -415;
+    border: 2px solid orange;
+    border-radius: 10px;
+    padding: 15px 15px 30px 15px;
+    text-align: justify;
+    -webkit-box-shadow: 18px 21px 20px 2px rgba(0, 0, 0, 0.84); 
+    -moz-box-shadow: 18px 21px 20px 2px rgba(0, 0, 0, 0.84); 
+    box-shadow: 18px 21px 20px 2px rgba(0, 0, 0, 0.84);
+    font-family: 'Oswald', sans-serif;
+}
+
+input {
+    margin-top: 5;
+    margin-bottom: 10;
+    font-size: 12pt;
+    color: white;
+    border: 0px solid;
+    border-radius: 10px;
+    background-color: rgb(37, 37, 37);
+    padding: 10px;
+}
+
+label{
+    margin-top: 10;
+    color: #797979;
+    font: 14pt sans-serif; 
+    font-weight:bold
+}
+
+button {
+    margin-top: 12;
+    height: 50;
+    width: 215;
+    font-size: 12pt;
+    color: white;
+    border: 0px solid;
+    border-radius: 50px;
+    background-color: rgb(80, 80, 80);
+    padding: 15px; 
+    -webkit-box-shadow: 11px 11px 5px -3px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 11px 11px 5px -3px rgba(0, 0, 0, 1);
+    box-shadow: 11px 11px 5px -3px rgba(0, 0, 0, 1);
+}
+
+button:hover{
+    background: rgba(255,255,255,.2);
+}
+
+button:active{
+    background: white; 
+}
+
+.pos1 {
+    margin-left: 200;
+}
+
+.pos2 {
+    margin-left: 550;
+    margin-top: -845;
+}
+
+.pos3 {
+    margin-left: 900;
+    margin-top: -845;
+}
+
+.transition-scale:hover {
+    transform: translate(10px, 10px);
+}
