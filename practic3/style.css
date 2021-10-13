@@ -1,0 +1,127 @@
+* {
+    outline: 0px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+.hoid {
+    margin: 100px;
+    margin-left: 500px;
+    box-shadow: 14px 30px 15px 0px rgba(0, 0, 0, 0.27);
+}
+
+.shallan {
+    margin: 100px;
+    margin-left: 500px;
+    box-shadow: 30px 0px 20px 0px rgba(0, 0, 0, 0.27), 0px 30px 10px 0px rgba(1, 139, 202, 0.27), -30px 0px 20px 0px rgba(0, 0, 0, 0.27), 0px -30px 9px 0px rgba(255, 136, 0, 0.27);
+    transition: box-shadow 0.5s ease-out;
+}
+
+.shallan:hover {
+    box-shadow: 30px 0px 20px 0px rgba(255, 0, 0, 0.27), 0px 30px 10px 0px rgba(255, 0, 0, 0.27), -30px 0px 20px 0px rgba(255, 0, 0, 0.27), 0px -30px 9px 0px rgba(255, 0, 0, 0.27);
+}
+
+.inCSSdiv {
+    background-color: rgba(127, 255, 212, 0.39);
+    padding: 20px 10px 20px 10px;
+    box-shadow: 0px 15px 40px 0px rgba(127, 255, 212, 0.39);
+}
+
+.suit::before {
+    content: '\2660\2665\2663\2666'; 
+    /* Черви, пики, трефы, бубе */
+}
+
+.money::before {
+    content: '\0024\FFE1\FFE5\20BD';
+    /* Доллар, фунт, йена, рубль */
+}
+
+.greek::before {
+    content: '\03B1\03B2\03B3\03B4\03B5';
+    /* альфа, бета, гамма, дельта, епсилон */
+}
+
+.sign1::before {
+    content: '\A9\2117\2122';
+    /* копирайт, копирайт музыки, торговая марка */
+}
+
+.fraction::before {
+    content: '\00BC\00BD\00BE';
+    /* 1/4, 1/2, 3/4 */
+}
+
+.sign2::before {
+    content: '\2014\00B6\A7\002D';
+    /* длинное тире, знак абзаца, знак параграфа, тире */
+}
+
+.sign3::before {
+    content: '\0023\0025\00BB\00AB\2121';
+    /* решетка, процент, кавычки правые, кавычки левые, телефон */
+}
+
+.chess {
+    width: 200px;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.chess > th {
+    border: 1px solid black;
+    width: 20px;
+}
+
+.diag {
+    width: 200px; height: 200px;
+    text-align: center;
+    font: 90px/200px Times, serif;
+    border: 24px solid #80b975;
+    border-right: 24px solid #cdecb0;
+    border-radius: 200px;
+}
+
+.check:checked + span {
+    background: rgb(255, 204, 0);
+}
+
+.container {
+    padding: 16px;
+}
+
+input[type=text], input[type=number] {
+    width: 200px;
+    padding: 4px;
+    margin: 10px;
+    border: 1px solid ;
+}
+
+.sendbtn {
+    padding: 3px;
+    margin: 10px 0 0 400px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.square {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    background: #5a58588e;
+  }
+  
+  .square:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+  
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
