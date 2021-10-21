@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Практическое задание №7: Тег canvas</title>
+
+    <script> 
+        window.onload = function() {
+         var drawingCanvas = document.getElementById('smile');
+         if(drawingCanvas && drawingCanvas.getContext) {
+          var context = drawingCanvas.getContext('2d');
+          // Рисуем окружность 
+       /* context.strokeStyle = "#000";
+          context.fillStyle = "#fc0";
+          context.beginPath();
+          context.arc(100,100,50,0,Math.PI*2,true);
+          context.closePath();
+          context.stroke();
+          context.fill();
+
+          context.fillStyle = "#fff";
+          context.beginPath();
+          context.arc(84,90,8,0,Math.PI*2,true);
+          context.closePath();
+          context.stroke();
+          context.fill();
+
+          context.strokeStyle = "#000";
+          context.fillStyle = "#fc0"; 
+          context.beginPath();
+          context.moveTo(150,150);
+          context.lineTo(200,200);
+          context.lineTo(200,150);
+          context.fill();
+
+          context.fillStyle = "#fff";
+          context.beginPath();
+          context.moveTo(140,140);
+          context.lineTo(190,190);
+          context.lineTo(190,140);
+          context.fill(); */
+
+          
+          context.fillRect(25,25,100,100);
+          context.clearRect(45,45,60,60);
+          context.strokeRect(50,50,50,50);
+
+          context.font = "22px Verdana";
+          context.fillText("Андриевский Максим", 200, 50);
+         }
+        }
+       </script>
+     
+</head>
+<body>
+    <canvas id="smile" width="1000" height="1000">
+        <p>Ваш браузер не поддерживает рисование.</p>
+    </canvas>
+</body>
+</html>
