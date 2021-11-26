@@ -1,0 +1,91 @@
+HTML SCSSResult Skip Results Iframe
+EDIT ON
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+main {
+  display: grid;
+  align-items: initial;
+  justfiy-content: initial;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "featured featured featured"
+    "item-1 item-1 item-1"
+    "item-2 item-2 item-2";
+  grid-gap: 1.25rem;
+  
+  @media (min-width: 600px) {
+    grid-template-areas:
+    "featured item-1 item-2"
+    "featured item-1 item-2";
+  }
+  
+  @media (min-width: 900px) {
+    grid-template-areas:
+    "featured item-1 item-1"
+    "featured item-2 item-2";
+  }
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c6bfd8;
+  border-radius: 5px;
+  
+  &:after {
+    content: "Article";
+  }
+}
+
+.item-2 {
+  grid-area: item-1;
+}
+
+.item-3 {
+  grid-area: item-2;
+}
+
+.item.featured {
+  grid-area: featured;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-column: main;
+}
+
+aside {
+  grid-row: sidebar;
+}
+
+footer {
+  grid-column: footer;
+}
+
+aside,
+main {
+  min-height: 300px;
+}
+
+body {
+  background: #ac9898;
+  line-height: 1.5;
+  font-family: "Arial";
+  padding: 4rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+View Compiled
+
+
+Resources1× 0.5× 0.25×Rerun
