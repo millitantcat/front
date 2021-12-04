@@ -1,0 +1,465 @@
+@media screen and (min-device-width: 1280px) {
+    * {
+        background: rgb(56, 56, 56);
+    }
+    .grid-init {
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+        background-color: lightsteelblue;
+        padding: 10px;
+    }
+    .flex-init {
+        max-width: 50%;
+        max-height: 100%;
+        margin: auto;
+        border-radius: 10px;
+        background-color: lightsteelblue;
+        padding: 10px;
+    }
+    .flex-init2 {
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+        border-radius: 10px;
+        background-color: lightsteelblue;
+    }
+    .box-init {
+        font-size: x-large;
+        color: #fff;
+        border-radius: 5px;
+        background-color: #2196f3;
+        border: 1px solid black;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .box-flex-init {
+        font-size: x-large;
+        color: rgb(0, 0, 0);
+        background-color: inherit;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .A {
+        grid-area: A;
+    }
+    .B {
+        grid-area: B;
+    }
+    .C {
+        grid-area: C;
+    }
+    .D {
+        grid-area: D;
+    }
+    .E {
+        grid-area: E;
+    }
+    .header {
+        grid-area: my_header;
+    }
+    .sidebar {
+        grid-area: my_sidebar;
+    }
+    .navigation {
+        grid-area: my_navigation;
+    }
+    .ads {
+        grid-area: my_ads;
+    }
+    .main {
+        grid-area: my_main;
+    }
+    .footer {
+        grid-area: my_footer;
+    }
+    .grid {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "A A A" "B B E" "C D E";
+    }
+    .grid2 {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 2fr;
+    }
+    .grid3 {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-rows: 1fr 1fr 10fr 1fr;
+        grid-template-columns: 1fr 5fr 1fr;
+        grid-template-areas: "my_header my_header my_header" "my_sidebar my_navigation my_ads" "my_sidebar my_main my_ads" "my_footer my_footer my_footer";
+    }
+    .flex {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .flex2 {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .flex3 {
+        display: flex;
+        gap: 10px;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .flex5 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto; 
+        width: 300px;
+        height: 200px;
+        align-items: center;
+        justify-content: center;
+    }
+    .flex5 .item_1 {
+        width: 100%;
+    }
+    .flex5 .item_2 {
+        width: 50%;
+    }
+    .flex5 .item_3 {
+        width: 31.3%;
+    }
+    .flex5 .item_4 {
+        width: 31.3%;
+    }
+    .flex5 .item_5 {
+        width: 50%;
+    } 
+    .flex-box {
+        padding: 10px;
+        margin: 3px;
+        border: 1px solid black;
+        border-radius: 5px;  
+        background-color: lightsteelblue;
+        width: 50px; 
+    }
+    .nav1 {
+        width: 50%;
+        margin-left: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 32px;
+    }
+    .menuToggle {
+        visibility: hidden;
+        position: absolute;
+    }
+    .content > p {
+        color: white;
+    }
+    .nav1 li {
+        list-style: none;
+    }
+    .pc a {
+        text-decoration: none;
+        color: aquamarine;
+    }
+    .logo {
+        color: aquamarine;
+        position: absolute;
+        font-size: 32px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    * {
+        background: rgb(56, 56, 56);
+    }
+    .grid-init {
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+        background-color: lightsteelblue;
+        padding: 10px;
+    }
+    .flex-init {
+        max-width: 70%;
+        max-height: 100%;
+        margin: auto;
+        border-radius: 10px;
+        background-color: lightsteelblue;
+        padding: 10px;
+    }
+    .flex-init2 {
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+        border-radius: 10px;
+        background-color: lightsteelblue;
+    }
+    .box-init {
+        font-size: x-large;
+        color: #fff;
+        border-radius: 5px;
+        background-color: #2196f3;
+        border: 1px solid black;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .box-flex-init {
+        font-size: x-large;
+        color: rgb(0, 0, 0);
+        background-color: inherit;
+        padding: 10px;
+    }
+    .A {
+        grid-area: A;
+    }
+    .B {
+        grid-area: B;
+    }
+    .C {
+        grid-area: C;
+    }
+    .D {
+        grid-area: D;
+    }
+    .E {
+        grid-area: E;
+    }
+    .grid {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "A A" "B B" "C D" "E E";
+    }
+    .grid2 {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .grid3 {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-rows: 1fr 1fr 6fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .flex2 {
+        display: flex;
+        gap: 10px;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+
+    .flex3 {
+        display: flex;
+        gap: 10px;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .flex5 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto; 
+        width: 300px;
+        height: 200px;
+        align-items: center;
+        justify-content: center;
+    }
+    .flex5 .item_1 {
+        width: 100%;
+    }
+    .flex5 .item_2 {
+        width: 100%;
+    }
+    .flex5 .item_3 {
+        width: 100%;
+    }
+    .flex5 .item_4 {
+        width: 40.5%;
+    }
+    .flex5 .item_5 {
+        width: 40.5%;
+    } 
+    .flex-box {
+        padding: 10px;
+        margin: 3px;
+        border: 1px solid black;
+        border-radius: 5px;  
+        background-color: lightsteelblue;
+        width: 50px; 
+    }
+    .menu a {
+        text-decoration: none;
+        color: #ffffff;
+        opacity: 1;
+        font-family: 'work sans', sans serif;
+        font-size: 1.5em;
+        transition: 20ms;
+    }
+    .menu {
+        padding: 0;
+        list-style-type: none;
+    }
+    .container {
+        background: rgb(56, 56, 56);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content {
+        width: 95%;
+        height: 95%;
+        background: rgb(56, 56, 56);
+    }
+    .content > p {
+        color: white;
+    }
+    .nav1 {
+        background: rgb(56, 56, 56);
+        height: 65px;
+    }
+    .menuToggle {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 25px;
+        left: 0px;
+    }
+    .menuToggle input {
+        display: flex;
+        top: -10px;
+        left: -10px;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        opacity: 0;
+        z-index: 2;
+    }
+    .menuToggle span {
+        display: flex;
+        width: 29px;
+        height: 2px;
+        margin-bottom: 5px;
+        background: #ffffff;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 5px 0px;
+        transition: 0.5s ease-in-out;
+    }
+    .menuToggle span:nth-child(4) {
+        transform-origin: 0% 0%;
+    }
+    .menuToggle input:checked~span {
+        transform: rotate(45deg) translate(-3px, -1px);
+    }
+    .menuToggle input:checked~span:nth-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0, 0);
+    }
+    .menuToggle input:checked~span:nth-child(4) {
+        transform: rotate(-45deg) translate(0px, -1px);
+    }
+    .menu {
+        position: absolute;
+        width: 180px;
+        height: 400px;
+        box-shadow: 0 0 10px #85888C;
+        margin: -50px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+        background: rgb(56, 56, 56);
+        transform: translate(-100%, 0);
+        transition: 0.5s ease-in-out;
+    }
+    .menu li {
+        padding: 10px 0;
+    }
+    .menuToggle input:checked~ul {
+        transform: none;
+    }
+    .pc {
+        position: absolute;
+        visibility: hidden;
+    }
+    .logo {
+        color: rgb(255, 255, 255);
+        position: absolute;
+        z-index: 1;
+        font-size: 32px;
+        margin-left: 60%;
+        margin-top: 18px;
+    }
+}
+
+@media screen and (min-device-width: 600px) and (max-device-width: 1024px) {
+    * {
+        background: rgb(56, 56, 56);
+    }
+    .grid-init {
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+        background-color: lightsteelblue;
+        padding: 10px;
+    }
+    .box-init {
+        font-size: x-large;
+        color: #fff;
+        border-radius: 5px;
+        background-color: #2196f3;
+        border: 1px solid black;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header {
+        grid-area: my_header;
+    }
+    .sidebar {
+        grid-area: my_sidebar;
+    }
+    .navigation {
+        grid-area: my_navigation;
+    }
+    .ads {
+        grid-area: my_ads;
+    }
+    .main {
+        grid-area: my_main;
+    }
+    .footer {
+        grid-area: my_footer;
+    }
+    .grid3 {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-rows: 1fr 1fr 12fr 1fr;
+        grid-template-columns: 1fr 5fr 1fr;
+        grid-template-areas: "my_header my_header my_header" "my_navigation my_navigation my_navigation" "my_sidebar my_main my_main" "my_ads my_footer my_footer";
+    }
+}
