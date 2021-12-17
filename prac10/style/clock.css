@@ -1,0 +1,30 @@
+* {
+    background-color: rgb(33,40,50);
+}
+
+.clock {
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    color: white;
+    background: var(--secondary-color);
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.clock-counter {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.clock-counter h2{
+    text-align: center;
+    font-size: 72px;
+}
+
+

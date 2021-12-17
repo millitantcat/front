@@ -1,0 +1,43 @@
+* {
+    background-color: rgb(33,40,50);
+}
+
+.social-list {
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background: var(--secondary-color);
+    padding: 70px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.social-list svg {
+    width: 64px;
+    height: 64px;
+}
+
+.youtube svg {
+    color: rgb(254,0,0);
+}
+.linkedin svg {
+    color: rgb(0,118,180);
+}
+.facebook svg {
+    color: rgb(66,103,178);
+}
+.twitter svg {
+    color: rgb(0,172,238);
+}
+
+.counter {
+    text-align: center;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 24px;
+}

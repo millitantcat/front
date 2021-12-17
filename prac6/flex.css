@@ -1,0 +1,93 @@
+.flex {
+    margin-top: 100px;
+    padding: 10px 30px 10px 10px;
+    border: 3px solid skyblue;
+    border-radius: 5px;
+}
+.flex ul {
+   display: flex;  
+   flex-direction: row;  
+}
+.flex ul li {
+    list-style-type: none;
+    margin-left: 20px;
+    font-size: 24px;
+}
+.flex + p:before {
+    content: "Desktop";
+}
+.flex2 + p:before {
+    content: "Desktop";
+}
+
+.flex2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 100px;  
+    width: 300px;
+    height: 200px; 
+}
+.flex-box {
+    padding: 10px;
+    margin: 3px;
+    border: 3px solid skyblue;
+    border-radius: 5px;   
+    width: 50px; 
+}
+.flex2 .item_1 {
+    width: 100%;
+}
+.flex2 .item_2 {
+    width: 70%;
+}
+.flex2 .item_3 {
+    width: 26%;
+}
+.flex2 .item_4 {
+    width: 26%;
+}
+.flex2 .item_5 {
+    width: 70%;
+} 
+
+
+@media (max-width: 767px){
+    .flex + p:before {
+        content: "Mobile";
+    }
+    .flex2 + p:before {
+        content: "Mobile";
+    }
+    .flex ul{
+        flex-direction: column;
+        justify-content: space-around;
+    }  
+    .flex ul li {
+        line-height: 50px;
+    }
+
+    .flex2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 100px;
+        width: 300px;   
+        height: 200px; 
+    }
+    .flex2 .item_1 {
+        width: 100%;
+    }
+    .flex2 .item_2 {
+        width: 100%;
+    }
+    .flex2 .item_3 {
+        width: 100%;
+    }
+    .flex2 .item_4 {
+        width: 48%;
+    }
+    .flex2 .item_5 {
+        width: 48%;
+    } 
+}

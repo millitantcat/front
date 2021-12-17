@@ -1,0 +1,97 @@
+.mark {
+    background: var(--secondary-color);
+    margin-bottom: 200px;
+    width: 350px;
+    height: 350px;
+    padding: 20px 30px;
+    border-radius: 10px;    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+.mark.invisible {
+    height: auto;
+    background: var(--secondary-color);
+    margin-bottom: 200px;
+    width: 350px;
+    padding: 20px 30px;
+    border-radius: 10px;    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.mark.invisible h1 {
+    position: absolute;
+    top: -100px;
+}
+.mark.invisible .comment{
+    position: absolute;
+    top: -100px;
+}
+.mark.invisible .send-btn {
+    position: absolute;
+    top: -100px;
+}
+
+.stars {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.stars .star {
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+.stars .star.hovered {
+    color: orange;
+    filter: drop-shadow(0 0 10px rgba(255, 51, 0, 0.3));
+}
+.stars .star.saved {
+    color: orange;
+    filter: drop-shadow(0 0 10px rgba(255, 51, 0, 0.3));
+}
+
+.mark h1 {
+    color: orange;
+    font-size: 24px;
+}
+
+.mark .comment {
+    width: 100%;
+    height: 90px;
+    border-radius: 10px;
+    background: rgb(34,34,34);
+}
+
+.mark .comment input {
+    outline: none;
+    border: none;
+    background: none;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: white;
+    position: relative;   
+}
+
+
+.mark .send-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: white;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background: rgb(34,34,34);
+
+}

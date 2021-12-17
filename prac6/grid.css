@@ -1,0 +1,117 @@
+.main-container {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid {    
+    display: grid;
+    grid-template-columns: 50px 100px;
+    grid-auto-rows: 200px;
+    grid-gap: 10px;
+}
+
+.box {
+    border: 3px solid orange;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+
+p {
+    margin-top: 10px;
+}
+p:before {
+    content: "Large screen";
+}
+
+
+
+.grid2 .item_1 { grid-area: A; }
+.grid2 .item_2 { grid-area: B; }
+.grid2 .item_3 { grid-area: C; }
+.grid2 .item_4 { grid-area: D; }
+.grid2 .item_5 { grid-area: E; }
+
+.grid2 {
+    margin-top: 100px;
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-rows: 50px;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-areas: "A A A"
+                         "B B E"
+                         "C D E";
+}
+
+.grid3 .item_1 { grid-area: Header; }
+.grid3 .item_2 { grid-area: Navigation; }
+.grid3 .item_3 { grid-area: Sidebar; }
+.grid3 .item_4 { grid-area: Main; }
+.grid3 .item_5 { grid-area: Ads; }
+.grid3 .item_6 { grid-area: Footer; }
+
+.grid3 {
+    margin-top: 100px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 50px 50px 200px 50px;
+    grid-template-columns: 100px 200px 100px;
+    grid-template-areas: "Header Header Header"
+                         "Sidebar Navigation Ads"
+                         "Sidebar Main Ads"
+                         "Footer Footer Footer";
+}
+
+
+
+@media (max-width: 767px){
+    p:before {
+        content: "Mobile";
+    }
+    .grid3 + p:before {
+        content: "Tablet";
+    }
+
+    .grid {
+        grid-template-columns: 150px;
+        grid-auto-rows: 50px;
+    }
+
+    .grid2 {
+        grid-template-columns: 150px 150px;
+        grid-template-areas: "A A"
+                             "B B"
+                             "C D"
+                             "E E";
+    }
+
+    .grid3 {
+        grid-template-columns: 100px 300px;
+        grid-template-areas: "Header Header"
+                             "Navigation Navigation"
+                             "Sidebar Main"
+                             "Ads Footer";
+    }
+}
+
+@media (max-width: 499px) {
+    .grid3 + p:before {
+        content: "Mobile";
+    }
+
+    .grid3 {
+        grid-template-columns: 300px;
+        grid-template-rows: 50px 50px 200px 50px 50px 50px;
+        grid-template-areas: "Header"
+                             "Navigation"
+                             "Main"
+                             "Sidebar"
+                             "Ads"
+                             "Footer";
+    }
+}
